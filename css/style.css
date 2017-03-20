@@ -1,0 +1,105 @@
+/*css重置样式  */
+body,div,i,a,p,span,b,input,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,dt,textarea,img{margin:0;padding:0;}
+body{font-family: microsoft yahei;color:#333;}
+i,b{font-style: normal;}
+a{text-decoration:none;}
+img{vertical-align:top;width: 100%;}
+input,textarea,select,textarea,img,a,button{resize: none;outline: none;border: none;}
+li{list-style: none}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.clearfix:after{content: '';display: block;height:0;clear: both;font-size:0;*zoom:1}
+/*css重置样式  End*/
+
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}
+.noscroll body {
+    position: relative;
+}
+
+/*** 蒙层样式  ***/
+.modal{background:rgba(42,38,38,0.5);width:100%;height:100%;position:fixed;left:0;top:0;display:none;z-index: 10;}
+.box{position:fixed;left:50%;top:42%;margin-top:-50%;z-index:99;margin-left:-40%;width:80%;}
+.box .shut{position:absolute;left:50%;bottom:24%;width:44%;height:10%;margin-left:-19%;}
+.box .link{position:absolute;left:50%;bottom:0;width:20%;height:11%;margin-left:-7%;}
+.box .wenben{position:absolute;left:10%;top:30%;width:80%;font-size:14px;}
+.box .wenben p{text-align:center;color:#883d03;font-size:20px;line-height:30px;}
+
+.box .shut1{position:absolute;left:50%;bottom:34%;width:40%;height:10%;margin-left:-21%;}
+.box .link1{position:absolute;left:50%;bottom:0;width:20%;height:11%;margin-left:-10%;}
+
+/*** 蒙层样式  End***/
+
+
+/*** 页面样式 ***/
+
+#index{padding-bottom:75px;background:#f5f5f5;}
+#index nav{background:#fff;position:fixed;left:0;bottom:0;width:100%;height:68px;z-index:999;}
+#index nav .nav_t{padding:0 5%;}
+#index nav .nav_t li{float:left;width:33%;padding:10px 0;text-align:center;}
+#index nav .nav_t li span{display:block;width:22%;margin:0 auto 5px;}
+#index nav .nav_t li p{font-size:14px;color:#666;}
+#index nav .nav_y{position:fixed;right:2%;bottom:72px;width:40%;background:#fff;border:1px solid #d4e5e6;border-radius:5px 5px 0 0;display:none;}
+#index nav .nav_b{right:30%;}
+#index nav .nav_y a{background:#edfeff;margin-bottom:5px;font-size:12px;padding:10px 6%;word-wrap:break-word;display:block;text-align:center;color:#1b1b1b;}
+#index nav .nav_y a p{display: inline-block;text-align:left;word-break:break-all;}
+#index nav .nav_y a:nth-child(1){border-radius:5px 5px 0 0;}
+#index nav .nav_y a:nth-last-child(1){margin-bottom:0;}
+.color{color:#ff5a01;}
+
+#index .mian{}
+#index .mian .mian_a{position:relative;background:#fff;margin-top:10px;}
+#index .mian .mian_a .m_top{position:relative;padding-left:40px;color:#666;font-size:14px;height:45px;line-height:45px;}
+#index .mian .mian_a .m_top .yuandian{display:block;width:6px;height:6px;border-radius:50%;background:#ff7a31;position:absolute;left:20px;top:50%;margin-top:-3px;}
+#index .mian .mian_a h3{padding-left:20px;font-size:16px;color:#000;}
+#index .mian .mian_a .m_wei{position:relative;padding:10% 0;}
+#index .mian .mian_a .m_wei h1{text-align:center;color:#ff5a01;font-size:30px;}
+#index .mian .mian_a .m_wei h2{color:#ff5a01;font-size:30px;}
+#index .mian .mian_a .m_wei span{font-size:12px;}
+#index .mian .mian_a .m_wei p{text-align:center;color:#666;}
+#index .mian .mian_a .m_wei a{position:absolute;right:3%;top:50%;border:2px solid #ff7a31;text-align:center;border-radius:5px;color:#000;font-size:14px;padding:1% 2%;}
+#index .mian .mian_a .m_wei .m_a{margin-top:-15px;}
+#index .mian .mian_a .m_wei .m_b{margin-top:-20px;}
+
+
+#index .mian .mian_a .bbq{padding:3% 0;border-top:1px solid #d1d1d1;}
+#index .mian .mian_a .bbq li{float:left;border-right:1px solid #d1d1d1;width:30%;text-align:center;}
+#index .mian .mian_a .bbq li:nth-last-child(1){border-right:none;}
+#index .mian .mian_a .bbq li:nth-child(2){width:39%;}
+#index .mian .mian_a .bbq li p{font-size:14px;color:#2daffc;}
+#index .mian .mian_a .bbq li span{font-size:12px;color:#666;}
+#index .mian .mian_a .bbq li:nth-last-child(1) p,#index .mian .mian_a .bbq li:nth-last-child(1) span{color:#ff7a31;}
+#index .mian .mian_a .bbq .bbq_y p{font-size:14px !important;color:#2daffc !important;}
+#index .mian .mian_a .bbq .bbq_y span{font-size:12px !important;color:#666 !important;}
+#index .mian .mian_a .bbq .p{color:#2daffc;padding-left:20px;font-size:14px;line-height:30px;}
+
+
+.Promotion{}
+.Promotion .header{color:#000000;font-size: 16px;height: 35px;line-height: 35px;padding-left: 3%;}
+.Promotion .header span{margin-left:26%;}
+.Promotion .header a{color:#000000;}
+.Promotion .main{position: relative;border-top:2px solid #e3e3e3;border-bottom:2px solid #e3e3e3;height: 50px;background-color: #f5f5f5;}
+.Promotion .main span{display: inline-block;position: absolute;left: 3%;top:35%;width: 18px;height: 18px;}
+.Promotion .main b{display: inline-block;position: absolute;left: 10%;top:34%;width: 60%;font-size: 14px;}
+.Promotion .incona{}
+.Promotion .incona h3{color:#000000;font-weight: bold;font-size: 15px;padding:2.5%;}
+.Promotion .incona p{color:#666666;line-height:23px;font-size: 14px;padding-left: 6%;padding-right: 5%;font-weight: bold;}
+.Promotion .incona p i{color:#ff5a01;}
+.Promotion .inconb span{display: inline-block;position: absolute;left: 6%;top:40%;width: 18px;height: 18px;}
+.Promotion .inconb .inconb{border-top:2px solid #e3e3e3;border-bottom:2px solid #e3e3e3;height: 50px;background-color: #f5f5f5;position: relative;}
+.Promotion .inconb .inconb span{display: inline-block;position: absolute;left: 2%;top:35%;width: 18px;height: 18px;}
+.Promotion .inconb .inconb b{display: inline-block;position: absolute;left: 9%;top:34%;width: 90%;font-size: 14px;font-weight: bold;}
+.Promotion .inconb h4{color:#000000;font-weight: bold;font-size: 15px;padding:2.5%;}
+.Promotion .inconb p{color:#666666;line-height:23px;font-size: 14px;padding-left: 6%;padding-right: 5%;}
+
+
+.account{position:relative;}
+.account a{display: block;position: absolute;left: 3%;top:0.5%;width: 13%;height: 1.2%;}
+
+.Tradingquery{position:relative;}
+.Tradingquery a{display: block;position: absolute;left: 3%;top:0.5%;width: 13%;height: 1.2%;}
+
+.prepaid{position:relative;}
+.prepaid a{display: block;position: absolute;left: 3%;top:0.5%;width: 13%;height: 1.2%;}
+

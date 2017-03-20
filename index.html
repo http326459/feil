@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>平安首页</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+    <script type="text/javascript">
+		$(function(){
+			$(".nav_t li").click(function(){
+				var num = $(this).index();
+				if(num == 0){
+					$(".nav_y").css("display","none");
+					$(".nav_t li p").css("color","#666");
+					$(".nav_t").find("li").eq(2).find("span img").attr("src","images/kerji.png");
+					$(".nav_t").find("li").eq(1).find("span img").attr("src","images/shuhui.png");
+					$(".nav_t").find("li").eq(0).find("span img").attr("src","images/gift1.png");
+					$(".nav_t").find("li").eq(0).find("p").css("color","#ff5a01");
+					$(".nav_y").css("display","none");
+				}else if(num == 1){
+					$(".nav_y").css("display","none");
+					$(".nav_t li p").css("color","#666");
+					$(".nav_t").find("li").eq(0).find("span img").attr("src","images/gift.png");
+					$(".nav_t").find("li").eq(2).find("span img").attr("src","images/kerji.png");
+					$(".nav_t").find("li").eq(1).find("span img").attr("src","images/shuhui1.png");
+					$(".nav_t").find("li").eq(1).find("p").css("color","#ff5a01");
+					$("nav").find(".nav_y").eq(0).css("display","block");
+				}else if(num == 2){
+					$(".nav_y").css("display","none");
+					$(".nav_t li p").css("color","#666");
+					$(".nav_t").find("li").eq(0).find("span img").attr("src","images/gift.png");
+					$(".nav_t").find("li").eq(1).find("span img").attr("src","images/shuhui.png");
+					$(".nav_t").find("li").eq(2).find("span img").attr("src","images/erji.png");
+					$(".nav_t").find("li").eq(2).find("p").css("color","#ff5a01");
+					$("nav").find(".nav_y").eq(1).css("display","block");
+				}
+				$(".nav_y a").click(function(){
+					$(".nav_y").css("display","none");
+					$(".nav_t li p").css("color","#666");
+					$(".nav_t").find("li").eq(0).find("span img").attr("src","images/gift.png");
+					$(".nav_t").find("li").eq(1).find("span img").attr("src","images/shuhui.png");
+					$(".nav_t").find("li").eq(2).find("span img").attr("src","images/kerji.png");
+				});
+			});
+			$(".mian").click(function(){
+				$(".nav_y").css("display","none");
+				$(".nav_t li p").css("color","#666");
+				$(".nav_t").find("li").eq(0).find("span img").attr("src","images/gift.png");
+				$(".nav_t").find("li").eq(1).find("span img").attr("src","images/shuhui.png");
+				$(".nav_t").find("li").eq(2).find("span img").attr("src","images/kerji.png");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="index">
+		<div class="header"><img src="images/header.jpg"></div>
+		<nav>
+			<ul class="clearfix nav_t">
+				<li>
+					<span><img src="images/gift.png"></span>
+					<p>促销活动</p>
+				</li>
+				<li>
+					<span><img src="images/shuhui.png"></span>
+					<p>产品赎回|查询</p>
+				</li>
+				<li>
+					<span><img src="images/kerji.png"></span>
+					<p>在线咨询</p>
+				</li>
+			</ul>
+			<div class="nav_y nav_b">
+				<a href="Tradingquery.html"><p>如何查询月月宝</p></a>
+				<a href="javascript:;"><p>如何查询新手专享</p></a>
+				<a href="javascript:;"><p>如何查询现金宝</p></a>
+			</div>
+			<div class="nav_y ">
+				<a href="javascript:;"><p>操作指引：如何开户</p></a>
+				<a href="javascript:;"><p>操作指引：如何充值</p></a>
+				<a href="javascript:;"><p>操作指引：如何查询交易明细</p></a>
+				<a href="javascript:;"><p>在线答疑：平安官方答疑QQ群272841139</p></a>
+			</div>
+		</nav>
+		<div class="mian">
+			<div class="mian_a">
+				<p class="m_top"><span class="yuandian"></span>平安银行</p>
+				<h3>月月宝</h3>
+				<div class="m_wei">
+					<h1>4.1%-5.0%</h1>
+					<p>日年化收益率</p>
+					<a href="Promotionpage.html" class="m_a">点击购买</a>
+				</div>
+				<ul class="bbq clearfix">
+					<li>
+						<p>1000元</p>
+						<span>购买起点</span>
+					</li>
+					<li>
+						<p>最低30天滚动购买</p>
+						<span>产品期限</span>
+					</li>
+					<li>
+						<p>预约赎回</p>
+						<span>赎回周期</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="mian_a">
+				<p class="m_top"><span class="yuandian"></span>平安银行</p>
+				<h3>平安车主信用卡</h3>
+				<div class="m_wei" style="padding:10% 0 10% 20px;">
+					<h2>天天加油88折</h2>
+					<span>全国50个城市，超过10000家加油站</span>
+					<a href="javascript:;" class="m_b">点击办卡<br>立享优惠</a>
+				</div>
+				<div class="bbq">
+					<p class="p">另：送110万全车人员意外险</p>
+					<p class="p">送30公里内免费道路救援服务</p>
+					<p class="p">送30公里内免费道路救援服务</p>
+				</div>
+			</div>
+			
+			<div class="mian_a">
+				<p class="m_top"><span class="yuandian"></span>平安银行</p>
+				<h3>新手专享</h3>
+				<div class="m_wei">
+					<h1>5.9%</h1>
+					<p>预期年化收益率</p>
+					<a href="account.html" class="m_a">点击购买</a>
+				</div>
+				<ul class="bbq clearfix">
+					<li>
+						<p>1万元</p>
+						<span>购买起点</span>
+					</li>
+					<li>
+						<p>14天</p>
+						<span>产品期限</span>
+					</li>
+					<li class="bbq_y">
+						<p>到期自动赎回</p>
+						<span>赎回周期</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="mian_a">
+				<p class="m_top"><span class="yuandian"></span>平安银行</p>
+				<h3>现金宝</h3>
+				<div class="m_wei">
+					<h1>3.4%-4.0%</h1>
+					<p>7日年化收益率</p>
+					<a href="prepaid.html" class="m_a">点击购买</a>
+				</div>
+				<ul class="bbq clearfix">
+					<li>
+						<p>1000元</p>
+						<span>购买起点</span>
+					</li>
+					<li>
+						<p>随存随取</p>
+						<span>产品期限</span>
+					</li>
+					<li class="bbq_y">
+						<p>T+0到账</p>
+						<span>赎回周期</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
